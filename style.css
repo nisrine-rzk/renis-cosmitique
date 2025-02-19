@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.titre{
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.titre em{
+    font-size: medium;
+}
+
+.sea{
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px ;
+    border-color: transparent;
+    padding-left: 10px;
+}
+
+.sea:hover{
+    border: 2px solid antiquewhite;
+}
+
+
+.recherche{
+    margin-right: 70% ;
+    
+}
+
+.reche>img{
+    width: 60%;
+}
+
+.reche{
+    border: none;
+    width: 10%;
+    background-color: white;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+nav li{
+    float: left;
+    width: 24%;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    /* position: sticky; */
+    margin: 0px auto 40px auto;
+    /* float: left; */
+    border-bottom: 1px solid black;
+}
+
+nav a{
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    display: block;
+    
+}
+
+nav a:hover{
+    color: pink;
+    border-bottom: 2px solid pink;
+}
+
+nav ul li{
+    /* float: left; */
+    width: 32%;
+    /* text-align: center; */
+    position: relative;
+}
+
+
+.sous{
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100%;
+}
+
+nav>ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: whitesmoke;
+    color: purple;
+}
+
+.deroulant>a::after{
+    content: "  ˅";
+    font-size: 15px;
+    
+}
+
+
+
+
+.inscription{
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+
+.inscription>button{
+    border-radius: 20px;
+    width: 12%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+.inscription a:hover{
+    color: antiquewhite;
+    
+}
+
+.inscription>button:hover{
+    background-color: purple;
+}
+
+
+.imag1{
+    margin-bottom: 10%;
+}
+
+.image-text1{
+    position: absolute;
+    text-align: left;
+    font-family: Georgia;
+    top: 40%;
+    color:rgb(122, 122, 122);
+    width: 200px;
+    margin-left: 80px;
+    padding-top: 100px;
+}
+
+.plus{
+    position: absolute;
+    top: 90%;
+    margin-left: 80px;
+    width: 120px;
+    border-radius: 15px;
+    animation: coleur 2s linear infinite;
+}
+
+@keyframes coleur{
+    0%{
+        background-color: antiquewhite;
+    }
+    20%{
+        background-color: pink;
+    }
+    55%{
+        background-color: rgb(122, 150, 122);
+    }
+    80%{
+        background-color: silver;
+    }
+    100%{
+        background-color: sienna;
+    }
+}
+
+.apro-img{
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.apro-text{
+    position: absolute;
+    text-align: left;
+    top: 200%;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    margin-left: 50px;
+    font-size: large;
+}
+
+.message{
+    position: fixed;
+    top: 85%;
+    left: 93%;
+}
+
+.message img{
+    width: 70%;
+}
+
+.ville{
+    display: inline-block;
+    width: 30%;
+    margin: 5px 5%;
+}
+
+.info{
+    margin-left: 15%;
+    
+}
+
+.logo{
+    margin-left: 70%;
+    color: pink;
+}
